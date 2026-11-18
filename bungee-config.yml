@@ -1,0 +1,43 @@
+ip_forward: true
+network_compression_threshold: 256
+stats: 11111111-1111-1111-1111-111111111111
+groups:
+  admin:
+  - admin
+servers:
+  lobby:
+    motd: '&1Eaglercraft Server'
+    address: 127.0.0.1:25566
+    restricted: false
+timeout: 30000
+player_limit: 20
+listeners:
+- query_port: 25577
+  motd: '&1Eaglercraft Server'
+  tab_list: GLOBAL_PING
+  query_enabled: false
+  proxy_protocol: false
+  forced_hosts:
+    pvp.md-5.net: pvp
+  ping_passthrough: false
+  priorities:
+  - lobby
+  bind_local_address: true
+  host: 0.0.0.0:25565
+  max_players: 20
+  tab_size: 60
+  force_default_server: true
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  admin:
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+online_mode: false
+log_commands: false
+disabled_commands:
+- disabledcommandhere
+connection_throttle: -1
